@@ -94,7 +94,45 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Truck" size={40} className="text-blue-600" />
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  className="text-blue-600"
+                  fill="currentColor"
+                >
+                  {/* Гусеничный экскаватор */}
+                  <g transform="translate(2,8)">
+                    <rect x="0" y="8" width="12" height="4" rx="1" />
+                    <rect x="1" y="10" width="2" height="1" />
+                    <rect x="4" y="10" width="2" height="1" />
+                    <rect x="7" y="10" width="2" height="1" />
+                    <rect x="10" y="10" width="1" height="1" />
+                    <rect x="4" y="6" width="6" height="2" rx="1" />
+                    <path d="M8,6 L12,2 L14,2 L14,4 L10,6 Z" />
+                    <circle cx="13" cy="3" r="1" />
+                  </g>
+                  {/* Колёсный экскаватор */}
+                  <g transform="translate(18,10)">
+                    <rect x="2" y="6" width="8" height="3" rx="1" />
+                    <circle cx="3" cy="8.5" r="1.5" />
+                    <circle cx="9" cy="8.5" r="1.5" />
+                    <rect x="4" y="4" width="4" height="2" rx="1" />
+                    <path d="M6,4 L10,0 L12,0 L12,2 L8,4 Z" />
+                    <circle cx="11" cy="1" r="0.8" />
+                  </g>
+                  {/* Мини экскаватор */}
+                  <g transform="translate(10,18)">
+                    <rect x="0" y="6" width="8" height="2.5" rx="0.5" />
+                    <rect x="0.5" y="7" width="1" height="0.5" />
+                    <rect x="2.5" y="7" width="1" height="0.5" />
+                    <rect x="4.5" y="7" width="1" height="0.5" />
+                    <rect x="6.5" y="7" width="1" height="0.5" />
+                    <rect x="2" y="4" width="4" height="2" rx="0.5" />
+                    <path d="M4,4 L7,1 L8.5,1 L8.5,2.5 L6,4 Z" />
+                    <circle cx="7.5" cy="1.8" r="0.6" />
+                  </g>
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Экскаваторы</h3>
               <p className="text-gray-600">
